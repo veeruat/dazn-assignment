@@ -12,7 +12,7 @@ This project demonstrates deploying a simple containerized web service on AWS us
 - Docker installed on your local machine
 - An AWS account with permissions to create the necessary resources
 
-## Inputs
+## Terraform modules inputs
 
 | Name                          | Description                                         |
 |-------------------------------|-----------------------------------------------------|
@@ -30,3 +30,25 @@ This project demonstrates deploying a simple containerized web service on AWS us
 | dazn_app_instance_name_tag    | EC2 instance name tag                               |
 | dazn_ecr_repo_name            | ECR repo name                                       |
 | dazn_app_port                 | Application port                                    |
+
+## Step-by-Step Deployment
+
+Follow these steps to deploy the Terraform infrastructure:
+
+### 1. Generate SSH Keys
+
+Generate SSH keys locally using `ssh-keygen`. These keys are necessary for connecting to the application instance.
+
+### 2. Configure AWS CLI
+
+Configure the AWS CLI with the required access credentials to authenticate Terraform with AWS.
+
+### 3. Initialize Terraform
+
+Navigate to the Terraform directory and initialize Terraform with the following command:
+```bash
+terraform init
+terraform plan
+terraform apply
+
+
