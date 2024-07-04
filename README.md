@@ -12,6 +12,15 @@ This project demonstrates deploying a simple containerized web service on AWS us
 - Docker installed on your local machine
 - An AWS account with permissions to create the necessary resources
 
+## Project Directory Structure
+
+The project directory is organized as follows:
+
+- **app**: Contains the HTML page for the web application.
+- **terraform**: Includes all Terraform modules and configuration files.
+- **Dockerfile**: Defines the configuration to build the Docker image for the web server.
+
+
 ## Terraform modules inputs
 
 | Name                          | Description                                         |
