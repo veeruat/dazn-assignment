@@ -1,3 +1,4 @@
+# AWS region
 provider "aws" {
   region = var.dazn_region
 }
@@ -31,6 +32,7 @@ module "ssh_key" {
   public_key_path = var.dazn_public_key_path
 }
 
+# Security groups for Application instance and Load Balancer.
 module "security_groups" {
   source = "./modules/security-groups"
 
