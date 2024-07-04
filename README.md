@@ -55,9 +55,26 @@ Configure the AWS CLI with the required access credentials to authenticate Terra
 ### 3. Initialize Terraform
 
 Navigate to the Terraform directory and initialize Terraform with the following command:
-```bash
+```
 terraform init
 terraform plan
 terraform apply
+```
+## Test Results
+
+### OS Version:
+![Screenshot from 2024-07-05 01-12-17](https://github.com/veeruat/dazn-assignment/assets/3947004/ab51038d-5fb5-4101-9124-c69e8c582cbe)
+
+### Terraform Version
+![Screenshot from 2024-07-05 01-14-46](https://github.com/veeruat/dazn-assignment/assets/3947004/57340830-c95f-4725-a12f-14c6b978cc85)
+
+### Terraform Apply Status
+![Screenshot from 2024-07-05 01-15-48](https://github.com/veeruat/dazn-assignment/assets/3947004/d0253f3c-5cdc-4754-9697-144c4fee52aa)
+
+### Weg Page
+![Screenshot from 2024-07-05 01-20-50](https://github.com/veeruat/dazn-assignment/assets/3947004/76f83d96-0775-4fe3-9159-0de744a009c0)
+
+
+
 
 
