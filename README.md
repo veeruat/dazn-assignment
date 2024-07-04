@@ -12,14 +12,21 @@ This project demonstrates deploying a simple containerized web service on AWS us
 - Docker installed on your local machine
 - An AWS account with permissions to create the necessary resources
 
-## Step-by-Step Deployment
+## Inputs
 
-### 1. Build Docker Image
-
-Create a Docker image for the web server and push it to AWS ECR.
-
-**Dockerfile**
-
-```dockerfile
-FROM nginx:latest
-COPY index.html /usr/share/nginx/html/index.html
+| Name                          | Description                                         |
+|-------------------------------|-----------------------------------------------------|
+| dazn_region                   | The AWS region to create resources in               |
+| dazn_vpc_cidr_block           | The CIDR block for the VPC                          |
+| dazn_public_subnets           | List of public subnet CIDR blocks                   |
+| dazn_availability_zones       | List of availability zones                          |
+| dazn_allowed_ssh_ips          | IP addresses allowed to SSH into the instance       |
+| dazn_app_instance_ami_id      | The AMI ID for the EC2 instance                     |
+| dazn_app_instance_pvt_key     | APP EC2 instance private key path, this required SSH to instance from provisioner                   |
+| dazn_public_key_path          | Path to the public key to be used for SSH access    |
+| dazn_app_instance_type        | The type of instance to create                      |
+| dazn_app_instance_user        | APP EC2 instance user                               |
+| dazn_app_instance_role_name   | DAZN APP docker image URL                           |
+| dazn_app_instance_name_tag    | EC2 instance name tag                               |
+| dazn_ecr_repo_name            | ECR repo name                                       |
+| dazn_app_port                 | Application port                                    |
